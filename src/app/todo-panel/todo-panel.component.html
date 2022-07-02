@@ -1,0 +1,69 @@
+<section class="todos-container">
+  <h1 class="p-3">{{ todosData.category }}</h1>
+  <section class="todos-list">
+    <ul *ngIf="todosData.todos!.length > 0" class="todos-list__ul p-0">
+      <li
+        #todoTask
+        *ngFor="let todo of todosData.todos; let i = index"
+        class="list-unstyled todos-list__li h4 p-3"
+      >
+        <span class="checkbox">
+          <input
+            type="checkbox"
+            [attr.data-name]="todo.task"
+            [checked]="todo.isDone"
+            (click)="onMarkDone($event)"
+            (keydown.enter)="onMarkDone($event)"
+        /></span>
+        <span
+          [ngClass]="{
+            'todos-list__span--text': true,
+            'strike-through': todo.isDone
+          }"
+          >{{ todo.task }}</span
+        >
+
+        <button
+          type="button"
+          class="todo-button--delete btn btn-light"
+          (click)="onTaskDelete($event)"
+          (keydown.enter)="onTaskDelete($event)"
+          [attr.data-name]="todo.task"
+          [attr.data-index]="i"
+        >
+          X
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <section class="todo-input">
+    <form>
+      <div
+        class="form-group"
+        [ngClass]="{
+          'visually-hidden': isInputHidden
+        }"
+      >
+        <label for="newTask">Enter new task</label>
+        <input
+          required
+          type="text"
+          class="form-control todo-input__input"
+          id="newTask"
+          aria-describedby="newTask"
+          placeholder="e.g. Buy an apple"
+          (keydown.enter)="onTodoSubmit($event)"
+        />
+      </div>
+      <button
+        type="submit"
+        class="todo-button--add btn btn-primary"
+        (click)="onAddButtonPress()"
+        (keydown.enter)="onAddButtonPress()"
+      >
+        +
+      </button>
+    </form>
+  </section>
+</section>

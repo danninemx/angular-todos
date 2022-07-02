@@ -1,0 +1,47 @@
+<section class="categories-container">
+  <section class="categories-list">
+    <ul class="categories-list__ul">
+      <li
+        *ngFor="let category of categories"
+        (click)="onCategoryClick($event)"
+        (keydown.enter)="onCategoryClick($event)"
+        class="list-unstyled categories-list__li h4 p-3"
+        [ngClass]="{ selected: category === selectedCategory }"
+        [attr.data-name]="category"
+        tabindex="0"
+      >
+        {{ category }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="category-input">
+    <form
+      class="form visually-hidden"
+      [ngClass]="{
+        'visually-hidden': isInputHidden
+      }"
+    >
+      <div class="form-group">
+        <label for="newCategory">Enter new category:</label>
+        <input
+          required
+          type="text"
+          class="form-control category-input__input"
+          id="newCategory"
+          aria-describedby="newCategory"
+          placeholder="e.g. Grocery"
+          (keydown.enter)="onCategorySubmit($event)"
+        />
+      </div>
+    </form>
+
+    <button
+      type="button"
+      class="categories-button btn btn-primary"
+      (click)="onPlusButtonPress($event)"
+    >
+      +
+    </button>
+  </section>
+</section>

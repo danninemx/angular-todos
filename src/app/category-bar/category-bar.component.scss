@@ -1,0 +1,54 @@
+@import "~font-awesome/css/font-awesome.min.css";
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 80vh;
+  width: max(250px);
+  max-height: 750px;
+  min-height: 300px;
+  min-width: 200px;
+  border: 1px solid grey;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.categories-list__ul {
+  padding: 0;
+}
+
+.categories-list__li {
+  border-bottom: 1px solid grey;
+
+  &:last-of-type {
+    margin-bottom: 62px;
+  }
+}
+
+.category-input {
+  display: flex;
+  justify-content: end;
+}
+
+form {
+  width: 100%;
+}
+
+.categories-button {
+  display: inline;
+  width: 2.5rem;
+  align-self: flex-end;
+}
+
+.selected {
+  box-shadow: inset 0 0 10px #06c;
+  border-radius: 5px;
+}
