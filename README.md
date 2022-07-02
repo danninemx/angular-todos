@@ -1,5 +1,14 @@
 # Todos
 
+This is a test project, developed with Angular and Bootstrap.
+
+< Wireframe >
+![image](https://user-images.githubusercontent.com/5622650/176998404-841a1b04-4588-4d3e-8a44-125e08ac9bdd.png)
+
+< Current UI >
+<img width="1792" alt="image" src="https://user-images.githubusercontent.com/5622650/176998516-78f2871a-9cc5-49dc-945b-f1c91a1b2407.png">
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
 ## Development server
@@ -12,16 +21,17 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Next steps
 
-Given the time straints, some aspects were left out of scope. Additional work would improve such areas as:
+Given the purpose and time straint, some aspects were left out of scope. Additional work would improve such areas as:
 
-- responsive design
-- error handling
-- form validations
-- animations
-- naming and type/interface
-- stricter type check
-- use of appropriate directives
-- parameterized CSS
-- state management
-- DRY
-- actual styling
+- Responsive design
+- Error handling
+- Form validations
+- Animations
+- Naming and type/interface
+- Stricter type check
+- Use of appropriate directives
+- Parameterized CSS
+- Accessibility
+- State management
+- DRY code
+- Styling
