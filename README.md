@@ -1,15 +1,18 @@
 # Todos
 
-This is a test project, developed with Angular and Bootstrap.
+This is a test project, developed with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. and Bootstrap.
 
-< Wireframe >
-![image](https://user-images.githubusercontent.com/5622650/176998404-841a1b04-4588-4d3e-8a44-125e08ac9bdd.png)
+---
+
+## Screenshots
 
 < Current UI >
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/5622650/176998516-78f2871a-9cc5-49dc-945b-f1c91a1b2407.png">
 
+< Wireframe >
+![image](https://user-images.githubusercontent.com/5622650/176998404-841a1b04-4588-4d3e-8a44-125e08ac9bdd.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+---
 
 ## Development server
 
